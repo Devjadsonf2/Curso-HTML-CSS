@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redmensionando imagens,inserindo áudio e vídeo</title>
+</head>
+<body>
+<h1>Imagens de diferentes tamanhos para diverso formatos de tela</h1>
+<picture>
+    <source media="(max-width: 750px)" srcset="Imagens/img1.png" type="image/png"><!--A source deve sempre obedecer ordem crescente da menor para a maior resolução de imagem-->
+    <source media="(max-width: 1050px)" srcset="Imagens/img2.png" type="image/png">
+    <img src="Imagens/img3.png" alt="tamnho padrão">
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em Html5.</p>
+    <!--Modo mais antigo<audio src="media/Banda Malta -. Against All Odds (Take A Look At Me Now).mp3" controls autoplay></audio>-->
+    <audio preload="auto" autoplay controls>
+        <source src="media/Banda Malta -. Against All Odds (Take A Look At Me Now).mp3" type="audio/mpeg">
+    </audio>
+    <h1>Trabalhando com vídeos em Html5</h1>
+    <p>Vamos aprender à inserir videos em nosso site.</p>
+   <!--Forma simples <video src="media/Meu video. - Youtube.mp4" controls></video> -->
+   <video controls><!--Usar poster="" para adicionar capa no video-->
+    <source src="media/Video Aula Como Palhetar Como Paul Gilbert e Kiko Loureiro. - YouTube.MP4" type="video/mp4"><!--Forma usada para adicionar vários formatos de vídeos para compatibilidade de navegadores-->
+   </video>
+   <h1>Inserindo vídeos do YouTube</h1><!--Copiar o código Html do vídeo desejado na respectiva plataforma e colar-->
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/LW0bhKitRBk?si=f2AfGI1T_SfoLGLx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</picture>
+</body>
+</html>
